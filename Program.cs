@@ -1,10 +1,3 @@
-/******************************************************************************
-* $Id: Program.cs 20 2010-12-14 18:53:59Z jouni.uusimaa $
-* $HeadURL: https://fortunesharp.googlecode.com/svn/trunk/Program.cs $
-* $Date: 2010-12-14 20:53:59 +0200 (ti, 14 joulu 2010) $
-* $Rev: 20 $
-* $Author: jouni.uusimaa $
-******************************************************************************/
 //The MIT License
 
 //Copyright (c) 2010 Jouni Uusimaa
@@ -323,15 +316,15 @@ namespace FortuneSharp
             
             Console.WriteLine("\n\t-c\tShow the cookie file from which the fortune came.");
             
-            Console.WriteLine("\n\t-f\tPrint out the list of files which would be searched,\n\t\tbut  don’t print a fortune.");
+            Console.WriteLine("\n\t-f\tPrint out the list of files which would be searched,\n\t\tbut  donï¿½t print a fortune.");
 
-            Console.WriteLine("\n\t-l\tLong  dictums  only.   See -n on how ‘‘long’’ is defined in this");
+            Console.WriteLine("\n\t-l\tLong  dictums  only.   See -n on how ï¿½ï¿½longï¿½ï¿½ is defined in this");
             Console.WriteLine("\t\tsense.");
 
             Console.WriteLine("\n\t-n length");
             Console.WriteLine("\t\tSet the longest fortune length (in characters) considered to  be");
-            Console.WriteLine("\t\t‘‘short’’  (the  default is 160).  All fortunes longer than this");
-            Console.WriteLine("\t\tare considered ‘‘long’’.  Be careful!  If you set the length too");
+            Console.WriteLine("\t\tï¿½ï¿½shortï¿½ï¿½  (the  default is 160).  All fortunes longer than this");
+            Console.WriteLine("\t\tare considered ï¿½ï¿½longï¿½ï¿½.  Be careful!  If you set the length too");
             Console.WriteLine("\t\tshort  and  ask for short fortunes, or too long and ask for long");
             Console.WriteLine("\t\tones, fortune goes into a never-ending thrash loop.");
             
@@ -339,7 +332,7 @@ namespace FortuneSharp
             Console.WriteLine("\t\tis ignored if a fortune directory is specified.");
             Console.WriteLine("\n\t\tPlease,  please,  please request a potentially offensive fortune");
             Console.WriteLine("\t\tif and only if you believe, deep in your  heart,  that  you  are");
-            Console.WriteLine("\t\twilling  to  be  offended.  (And  that you’ll just quit using -o");
+            Console.WriteLine("\t\twilling  to  be  offended.  (And  that youï¿½ll just quit using -o");
             Console.WriteLine("\t\trather than give us grief about it, okay?)");
             Console.WriteLine("\n\t\t... let us keep in mind the basic governing  philosophy  of  The");
             Console.WriteLine("\t\tBrotherhood, as handsomely summarized in these words: we believe");
@@ -348,7 +341,7 @@ namespace FortuneSharp
             Console.WriteLine("\t\t\t--H. Allen Smith, \"Rude Jokes\"\n");
 
             Console.WriteLine("\n\t-s\tShort  apothegms  only.  See -n on which fortunes are considered");
-            Console.WriteLine("\t\t‘‘short’’.");
+            Console.WriteLine("\t\tï¿½ï¿½shortï¿½ï¿½.");
 
             
             Console.WriteLine("\n\t-v\tDisplay version info");

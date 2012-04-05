@@ -1,7 +1,7 @@
 ;--------------------------------
 ;Definitions
 !define COMPANY_NAME ""
-!define VERSION "1.6.0"
+!define VERSION "1.8.0"
 !define PRODUCT_NAME "FortuneSharp ${VERSION}"
 !define PRODUCT_NAME_NO_VERSION "FortuneSharp"
 !define OUTPUT_FILE "FortuneSharpInstall.exe"
@@ -103,7 +103,7 @@ OutFile "${OUTPUT_FILE}"
 ;Default installation folder
 InstallDir "${MULTIUSER_INSTALLMODE_INSTDIR}"
 
-;Get EB Promsim installation folder from registry if available
+;Get installation folder from registry if available
 InstallDirRegKey HKCU "${REG_APP_PATH}" "InstallDir"
 
 ;Request application privileges for Windows Vista/7
@@ -131,87 +131,27 @@ RequestExecutionLevel admin
 
 ;--------------------------------
 ;Installer Sections
-Section "FortuneSharp 1.6.0" SecFiles
+Section "FortuneSharp 1.8.0" SecFiles
 	SetOverwrite on
-  SetOutPath "$INSTDIR"
+    SetOutPath "$INSTDIR"
   
-  ;Installed files
+	;Installed files
 	File "..\bin\Release\Fortune.exe"
 	
 	CreateDirectory "$INSTDIR\Cookies"	
 	CreateDirectory "$INSTDIR\Off"
+
+	SetOutPath "$INSTDIR\Cookies" 
+	File "..\resources\Cookies\*.*"
 	
-	;CopyFiles "..\resources\Cookies\*" "$INSTDIR\Cookies"
-	;CopyFiles /FILESONLY "..\resources\Off\" "$INSTDIR\Off\"
-	
-	File "/oname=Cookies\art" "..\resources\Cookies\art"
-	File "/oname=Cookies\ascii-art" "..\resources\Cookies\ascii-art"
-	File "/oname=Cookies\bofh" "..\resources\Cookies\bofh"
-	File "/oname=Cookies\chalkboard" "..\resources\Cookies\chalkboard"
-	File "/oname=Cookies\chucknorris" "..\resources\Cookies\chucknorris"
-	File "/oname=Cookies\computers" "..\resources\Cookies\computers"
-	File "/oname=Cookies\cookie" "..\resources\Cookies\cookie"
-	File "/oname=Cookies\definitions" "..\resources\Cookies\definitions"
-	File "/oname=Cookies\drugs" "..\resources\Cookies\drugs"
-	File "/oname=Cookies\education" "..\resources\Cookies\education"
-	File "/oname=Cookies\ethnic" "..\resources\Cookies\ethnic"
-	File "/oname=Cookies\familyguy" "..\resources\Cookies\familyguy"
-	File "/oname=Cookies\food" "..\resources\Cookies\food"
-	File "/oname=Cookies\fortunes" "..\resources\Cookies\fortunes"
-	File "/oname=Cookies\futurama" "..\resources\Cookies\futurama"
-	File "/oname=Cookies\goedel" "..\resources\Cookies\goedel"
-	File "/oname=Cookies\hitchhiker" "..\resources\Cookies\hitchhiker"
-	File "/oname=Cookies\homer" "..\resources\Cookies\homer"
-	File "/oname=Cookies\humorists" "..\resources\Cookies\humorists"
-	File "/oname=Cookies\kids" "..\resources\Cookies\kids"
-	File "/oname=Cookies\law" "..\resources\Cookies\law"
-	File "/oname=Cookies\linuxcookie" "..\resources\Cookies\linuxcookie"
-	File "/oname=Cookies\literature" "..\resources\Cookies\literature"
-	File "/oname=Cookies\love" "..\resources\Cookies\love"
-	File "/oname=Cookies\magic" "..\resources\Cookies\magic"
-	File "/oname=Cookies\medicine" "..\resources\Cookies\medicine"
-	File "/oname=Cookies\men-women" "..\resources\Cookies\men-women"
-	File "/oname=Cookies\miscellaneous" "..\resources\Cookies\miscellaneous"
-	File "/oname=Cookies\news" "..\resources\Cookies\news"
-	File "/oname=Cookies\people" "..\resources\Cookies\people"
-	File "/oname=Cookies\pets" "..\resources\Cookies\pets"
-	File "/oname=Cookies\platitudes" "..\resources\Cookies\platitudes"
-	File "/oname=Cookies\politics" "..\resources\Cookies\politics"
-	File "/oname=Cookies\riddles" "..\resources\Cookies\riddles"
-	File "/oname=Cookies\science" "..\resources\Cookies\science"
-	File "/oname=Cookies\songs-poems" "..\resources\Cookies\songs-poems"
-	File "/oname=Cookies\sports" "..\resources\Cookies\sports"
-	File "/oname=Cookies\startrek" "..\resources\Cookies\startrek"
-	File "/oname=Cookies\starwars" "..\resources\Cookies\starwars"
-	File "/oname=Cookies\translate-me" "..\resources\Cookies\translate-me"
-	File "/oname=Cookies\wisdom" "..\resources\Cookies\wisdom"
-	File "/oname=Cookies\work" "..\resources\Cookies\work"
-	File "/oname=Cookies\zippy" "..\resources\Cookies\zippy"
-	
-	File "/oname=Off\astrology" "..\resources\Off\astrology"
-	File "/oname=Off\black-humor" "..\resources\Off\black-humor"
-	File "/oname=Off\definitions" "..\resources\Off\definitions"
-	File "/oname=Off\drugs" "..\resources\Off\drugs"
-	File "/oname=Off\ethnic" "..\resources\Off\ethnic"
-	File "/oname=Off\hphobia" "..\resources\Off\hphobia"
-	File "/oname=Off\limerick" "..\resources\Off\limerick"
-	File "/oname=Off\misandry" "..\resources\Off\misandry"
-	File "/oname=Off\miscellaneous" "..\resources\Off\miscellaneous"
-	File "/oname=Off\misogyny" "..\resources\Off\misogyny"
-	File "/oname=Off\politics" "..\resources\Off\politics"
-	File "/oname=Off\privates" "..\resources\Off\privates"
-	File "/oname=Off\racism" "..\resources\Off\racism"
-	File "/oname=Off\religion" "..\resources\Off\religion"
-	File "/oname=Off\riddles" "..\resources\Off\riddles"
-	File "/oname=Off\sex" "..\resources\Off\sex"
-	File "/oname=Off\songs-poems" "..\resources\Off\songs-poems"
-	File "/oname=Off\vulgarity" "..\resources\Off\vulgarity"
+	SetOutPath "$INSTDIR\Off"
+	File "..\resources\Off\*.*"
 	 
-  ;Store installation folder
-  WriteRegStr HKCU "${REG_APP_PATH}" "InstallDir" $INSTDIR
-  
-  ;Create uninstaller
-  WriteUninstaller "$INSTDIR\Uninstall.exe"
+	;Store installation folder
+	WriteRegStr HKCU "${REG_APP_PATH}" "InstallDir" $INSTDIR
+	 
+	;Create uninstaller
+	WriteUninstaller "$INSTDIR\Uninstall.exe"
 	
 	!insertmacro UpdatePath	
 	!insertmacro UpdateReg	

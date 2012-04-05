@@ -272,7 +272,7 @@ namespace FortuneSharp
         {
             Console.WriteLine("\nThe MIT License");
             
-            Console.WriteLine("\nCopyright (c) 2008 Jouni Uusimaa");
+            Console.WriteLine("\nCopyright (c) 2012 Jouni Uusimaa");
 
             Console.WriteLine("\nPermission is hereby granted, free of charge, to any person obtaining a copy");
             Console.WriteLine("of this software and associated documentation files (the \"Software\"), to deal");

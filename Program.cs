@@ -1,6 +1,6 @@
 //The MIT License
 
-//Copyright (c) 2010 Jouni Uusimaa
+//Copyright (c) 2012 Jouni Uusimaa
 
 //Permission is hereby granted, free of charge, to any person obtaining a copy
 //of this software and associated documentation files (the "Software"), to deal
@@ -19,6 +19,8 @@
 //LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //THE SOFTWARE.
+
+// URL for man pages: http://manpages.ubuntu.com/
 
 
 using System;
@@ -266,31 +268,29 @@ namespace FortuneSharp
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="length"></param>
+        /// <returns></returns>
+        private static List<string> splitString(string text)
+        {
+            List<string> list = new List<string>(text.Split(new string[] { "\r\n" }, StringSplitOptions.None));
+            return list;
+        }
+        
+        /// <summary>
         /// Shows the MIT License.
         /// </summary>
         private static void showLicense()
         {
-            Console.WriteLine("\nThe MIT License");
-            
-            Console.WriteLine("\nCopyright (c) 2012 Jouni Uusimaa");
+            string licenseText = FortuneSharp.Resources.MIT_license;
 
-            Console.WriteLine("\nPermission is hereby granted, free of charge, to any person obtaining a copy");
-            Console.WriteLine("of this software and associated documentation files (the \"Software\"), to deal");
-            Console.WriteLine("in the Software without restriction, including without limitation the rights");
-            Console.WriteLine("to use, copy, modify, merge, publish, distribute, sublicense, and/or sell");
-            Console.WriteLine("copies of the Software, and to permit persons to whom the Software is");
-            Console.WriteLine("furnished to do so, subject to the following conditions:");
-
-            Console.WriteLine("\nThe above copyright notice and this permission notice shall be included in");
-            Console.WriteLine("all copies or substantial portions of the Software.");
-
-            Console.WriteLine("\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR");
-            Console.WriteLine("IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,");
-            Console.WriteLine("FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE");
-            Console.WriteLine("AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER");
-            Console.WriteLine("LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,");
-            Console.WriteLine("OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN");
-            Console.WriteLine("THE SOFTWARE.");
+            Console.WriteLine(Environment.NewLine);
+            foreach (string line in splitString(licenseText))
+            {
+                Console.WriteLine(line);
+            }
         }
 
         /// <summary>
@@ -298,55 +298,13 @@ namespace FortuneSharp
         /// </summary>
         private static void showHelp()
         {
-            Console.WriteLine("\nNAME");
-            Console.WriteLine("\tfortune - print a random, hopefully interesting, adage");
-            
-            Console.WriteLine("\nSYNOPSIS");
-            Console.WriteLine("\n\tfortune [-a -c -f -o -s -v] [file]");
-            
-            Console.WriteLine("\nDESCRIPTION");
-            Console.WriteLine("\tWhen  fortune  is run with no arguments it prints out a random epigram.");
-            Console.WriteLine("\tEpigrams are divided into several categories, where  each  category  is");
-            Console.WriteLine("\tsub-divided  into those which are potentially offensive and those which");
-            Console.WriteLine("\tare not.");
-           
-            Console.WriteLine("\nOptions");
-            Console.WriteLine("\t-a\tChoose from all lists of maxims, both offensive and  not.");
-            Console.WriteLine("\t\t(See the -o option for more information on offensive fortunes.)");
-            
-            Console.WriteLine("\n\t-c\tShow the cookie file from which the fortune came.");
-            
-            Console.WriteLine("\n\t-f\tPrint out the list of files which would be searched,\n\t\tbut  don�t print a fortune.");
+            string helpText = FortuneSharp.Resources.fortune_help;
 
-            Console.WriteLine("\n\t-l\tLong  dictums  only.   See -n on how ��long�� is defined in this");
-            Console.WriteLine("\t\tsense.");
-
-            Console.WriteLine("\n\t-n length");
-            Console.WriteLine("\t\tSet the longest fortune length (in characters) considered to  be");
-            Console.WriteLine("\t\t��short��  (the  default is 160).  All fortunes longer than this");
-            Console.WriteLine("\t\tare considered ��long��.  Be careful!  If you set the length too");
-            Console.WriteLine("\t\tshort  and  ask for short fortunes, or too long and ask for long");
-            Console.WriteLine("\t\tones, fortune goes into a never-ending thrash loop.");
-            
-            Console.WriteLine("\n\t-o\tChoose only from potentially offensive aphorisms. The -o option");
-            Console.WriteLine("\t\tis ignored if a fortune directory is specified.");
-            Console.WriteLine("\n\t\tPlease,  please,  please request a potentially offensive fortune");
-            Console.WriteLine("\t\tif and only if you believe, deep in your  heart,  that  you  are");
-            Console.WriteLine("\t\twilling  to  be  offended.  (And  that you�ll just quit using -o");
-            Console.WriteLine("\t\trather than give us grief about it, okay?)");
-            Console.WriteLine("\n\t\t... let us keep in mind the basic governing  philosophy  of  The");
-            Console.WriteLine("\t\tBrotherhood, as handsomely summarized in these words: we believe");
-            Console.WriteLine("\t\tin healthy, hearty laughter -- at the expense of the whole human");
-            Console.WriteLine("\t\trace, if needs be.  Needs be.");
-            Console.WriteLine("\t\t\t--H. Allen Smith, \"Rude Jokes\"\n");
-
-            Console.WriteLine("\n\t-s\tShort  apothegms  only.  See -n on which fortunes are considered");
-            Console.WriteLine("\t\t��short��.");
-
-            
-            Console.WriteLine("\n\t-v\tDisplay version info");
-            
-            Console.WriteLine("\n\t/?\tDisplay this help.");
+            Console.WriteLine(Environment.NewLine);
+            foreach (string line in splitString(helpText))
+            {
+                Console.WriteLine(line);
+            }
         }
 
         /// <summary>

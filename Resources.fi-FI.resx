@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="fortune_help" xml:space="preserve">
+    <value>NIMI
+
+        fortune - tulosta satunnainen, toivottavasti mielenkiintoinen elämänvi‐
+        isaus
+ 
+YLEISKATSAUS
+
+        fortune   [-aefilosw]   [-n   pituus]   [    -m    merkkijono]    [[n%]
+        tiedosto/hakemisto/all]
+ 
+KUVAUS
+
+        Käynnistettäessä   fortune   ilman   optioita  se  näyttää  satunnaisen
+        elämänviisauden.  Nämä on jaettu useisiin luokkiin, joista jokainen  on
+        edelleen jaettu loukkaamattomiin ja mahdollisesti loukkaaviin.
+ 
+    OPTIOT
+        Tässä ovat ohjelman optiot:
+ 
+        -a     Valitse  molemmista, loukkaavista ja loukkaamattomista listoista
+               (Katso optiosta -o lisätietoja loukkaavista viisauksista.)
+ 
+        -e     Oleta kaikkien lähdetiedostojen olevan yhtä suuria (katso ohjeet
+               useiden tiedostojen käytöstä).
+ 
+        -f     Näytä  lista tiedostoista, joista viisauksia etsittäisiin, mutta
+               älä näytä yhtään viisautta.
+ 
+        -l     Vain  pitkät  elämänviisaudet.   Katso   optiosta   -n,   kuinka
+               ’’pitkä’’ määritellään.
+ 
+        -m merkkijono
+               Tulosta  kaikki  elämänviisaudet, joissa on mainittu merkkijono.
+               Merkkijonon  kielioppi  riippuu  siitä,   kuinka   järjestelmäsi
+               määrittelee  funktiokutsun  re_comp(3) tai regcomp(3), mutta sen
+               pitäisi olla samankaltainen syntaksiltaan kuin grep(1)  käyttää.
+ 
+               Elämänviisaudet  tulostetaan vakiotulosteeseen, kun taas tiedos‐
+               tonimet, joista ne luetaan, tulostetaan  vakiovirheeseen.   Kum‐
+               matkin  voidaan  kuitenkin ohjata jonnekin muualle; jos vakiotu‐
+               loste ohjataan tiedostoon, on tämä hyväksytty  fortune-tietokan‐
+               tatiedosto.   Jos  taas  myös  vakiovirhe  ohjataan tähän samaan
+               tiedostoon, on tulostiedosto  yhä  hyväksytty,  mutta  siin     on
+                         virheellisi                el   m   nviisauksia   eli   nämä   tiedostonimet
+               sulkumerkkien sisällä.  Tämä voi kuitenkin olla  käytännöllistä,
+               jos  halutaan  poistaa löytyneet viisaudet tiedostoistaan, koska
+               jokainen   tiedostonimitallenne   edeltää   siitä    tiedostosta
+               löytyneitä täsmäyksiä.
+ 
+        -n pituus
+               Säädä suurin elämänviisauden pituus (merkeissä), joka käsitetään
+               vielä ’’lyhyenä’’ (oletusarvo on  160).   Kaikki  tätä  pidemmät
+               ovat   ’’pitkiä’’.   Ole  varovainen!  Jos  asetat  arvon  liian
+               lyhyeksi ja haluat lyhyitä  viisauksia,  tai  asetat  sen  liian
+               pitkäksi  ja  haluat pitkiä, joutuu ohjelma päättymättömään sil‐
+               mukkaan.
+ 
+        -o     Valitse vain mahdollisesti loukkaavista aforismeista.
+ 
+               Ole kiltti ja  pyyd     loukkaavaa  aforismia  vain,  jos  syv   ll   
+               syd   mess   si  uskot  haluavasi  tulla loukatuksi (ja vain lopetat
+               -o:n k   ytt   misen sensijaan, ett    tuottaisit meille  mieliharmia.
+               Sovittu?)
+ 
+               ...  let  us  keep in mind the basic governing philosophy of The
+               Brotherhood, as handsomely summarized in these words: we believe
+               in healthy, hearty laughter -- at the expense of the whole human
+               race, if needs be.  Needs be.
+                      --H. Allen Smith, "Rude Jokes"
+ 
+        -s     Vain lyhyet  viisaudet.   Katso  optiota  -n,  kuinka  ’’lyhyt’’
+               määritellään.
+ 
+        -i     Älä  huomioi  suurten  ja  pienten  kirjainten  eroa  -m-optiota
+               käytettäessä.
+ 
+        -w     Odota ohjelman loppumista  tietty  aika,  joka  lasketaan  jutun
+               sisältämien  merkkien määrästä.  Tämä ominaisuus on hyödyllinen,
+               jos ohjelma halutaan osaksi uloskirjautumista, jolloin varmiste‐
+               taan, että käyttäjä ehtii lukea viestin ennen kuin ruutu tyhjen‐
+               netään.
+ 
+        Käyttäjä voi määritellä uusia sanontoja.  Voit määritellä tiedoston tai
+        hakemiston,  jossa  on useita tiedostoja, tai käyttää sanaa all jolloin
+        käytetään  kaikkia  normaaleja  tietokantoja.   Näistä  jokaisen  eteen
+        voidaan  antaa  prosenttilukema, joka on luku n 0 ja 100 välillä, jonka
+        perässä on %.  Näin määriteltynä n prosentin todennäköisyydellä viisaus
+        otetaan siitä tiedostosta tai hakemistosta.  Jos prosenttilukujen summa
+        on alle 100%  ja  on  annettu  tiedostoja/hakemistoja,  joille  ei  ole
+        annettu prosenttimäärää, loput prosentit menevät niille, suhteellisesti
+        kokojen mukaan jaettuna.
+ 
+        Esimerkkinä on kaksi tietokantaa, hassut ja ei-hassut, joista hassut on
+        kaksi kertaa suurempi (elämänviisauksien määrässä mitattuna).  Niinpä
+ 
+               fortune hassut ei-hassut
+ 
+        antaa  sinulle kaksi kolmasosaa ajasta viisauksia hassut-tietokannasta.
+        Komento
+ 
+               fortune 90% hassut 10% ei-hassut
+ 
+        ottaa 90% elämänviisauksista tiedostosta hassut (’’10%’’ on  tarpeeton,
+        koska 10% on kaikki, mitä on jäljellä).
+ 
+        Käyttämällä optiota -e kaikki tiedostot ovat samanarvoisia, jolloin
+ 
+               fortune -e hassut ei-hassut
+ 
+        tarkoittaa samaa, kuin
+ 
+               fortune 50% hassut 50% ei-hassut
+ 
+        Tässä ohjelmassa on myös tuki BSD-tyylin mukaiseen loukkaavia sanontoja
+        sisältävien tiedostojen merkintään, eli ’’-o’’:n lisäykseen tiedostoni‐
+        men  loppuun.   Näin  fortune  ei kuitenkaan tallenna niitä: loukkaavat
+        elämänviisaudet  tallennetaan  erilliseen  hakemistoon   ilman   ’’-o’’
+        -päätettä.   Tähän  päätteeseen  loppuvasta  nimestä  (joka  ei sisällä
+        polkua eikä ole hakemisto) poistetaan pääte ja  se  haetaan  loukkaavia
+        sanontoja  sisältävästä  hakemistosta  (vaikkei kumpaakaan optioista -a
+        tai -o olisi annettu).  Tämä ominaisuus on sekä yhteensopivuuden vuoksi
+        että myös siksi, että käyttäjät voivat käyttää samannimisiä loukkaamat‐
+        tomia ja loukkaavia tietokantoja samaan aikaan.
+ 
+        Oletetaan esimerkiksi tietokanta, nimeltään määrittelyjä, joka on  kum‐
+        massakin,  sekä  loukkaavissa että loukkaamattomissa kokoelmissa.  Seu‐
+        raava komento valitsee loukkaamattoman 90% ja loukkaavan  lopuilla  10%
+        kerroista.
+ 
+               fortune 90% määrittelyjä määrittelyjä-o
+ 
+TIEDOSTOT
+
+        Huomaa: nämä ovat käännön aikana määriteltyjä oletusavoja.
+ 
+        /usr/share/games/fortunes
+               Loukkaamattomien elämänviisauksien hakemisto.
+        /usr/share/games/fortunes/off
+               Loukkaavien elämänviisauksien hakemisto.
+ 
+        Jos  jotain  elämänviisauskokoelmaa  ei  haluta,  on  helpointa poistaa
+        tiedostoon liittyvä .dat-tiedosto, jolloin ne kuitenkin jäävät  levylle
+        siltä  varalta, että niitä tarvittaisiin myöhemmin.  Kun sitten fortune
+        ei löydä tätä osoitintiedostoa, se ohittaa em. tiedoston.
+ 
+BUGIT
+
+        Jako loukkaaviin ja loukkaamattomiin elämänviisauksiin hakemiston  eikä
+        ’’-o’’  -päätteen avulla ei ole 100% yhteensopiva alkuperäisen BSD-for‐
+        tunen  kanssa.   Vaikka  ’’-o’’   -pääte   tunnistetaan   viittaukseksi
+        loukkaavaan  tietokantaan,  näiden  tiedostojen  on  silti oltava eril‐
+        lisessä  hakemistossa.   Kiertotie  on  tietysti  ’’-o’’   -tiedostojen
+        siirtäminen  loukkaavaan  hakemistoon  (uudelleen  nimettynä tai ei) ja
+        käyttää optiota -a.
+ 
+        Mukanatoimitetut tietokannat  on  käsitelty  niin,  että  vältettäisiin
+        oikeinkirjoitus-  ja sanastovirheitä sekä monisanaisuutta, toistettavu‐
+        utta ja monisanaisuutta,  erityisesti  toistettavuutta.   Tämä  ei  ole
+        kuitenkaan   onnistunut  täydellisesti,  joitakin  elämänviisauksia  on
+        myöskin saattanut kadota.
+ 
+        Fortunen tietokannat on jaettu nyt suureen määrään  pieniä  tiedostoja,
+        jotkut  nimettynä  muodon  mukaan  (arvoitukset  (riddles), määrittelyt
+        (definitions)), jotkut sisällön mukaan (ruoka (food), politiikka (poli‐
+        tics)).  Hakemistoissa on samoja tiedostoja (kuten fortunes/definitions
+        ja fortunes/off/definitions).  Kaikki mahdollisesti loukkaavat sanonnat
+        eivät  ole  tiedostoissa, jonne ne kuuluisivat, eivätkä kaikki sanonnat
+        loukkaavissa tiedostoissa loukkaa, vaikka suurta työtä on tehty suurem‐
+        man  johdonmukaisuuden saavuttamiseksi.  Parempi jaottelu olisi myöskin
+        voitu tehdä.
+ 
+HISTORIA
+
+        Tämä versio pohjautuu NetBSD:n fortune 1.4:ään, mutta tästä on korjattu
+        bugeja ja lisätty ominaisuuksia.
+ 
+        Alkuperäinen  fortune/strfile  -tiedostomuoto  käsitti yhden tiedoston;
+        strfile luki tekstitiedoston ja muunsi  sen  null-päätteisiksi  merkki‐
+        jonoiksi,  jotka  tallennettiin osoitintaulukon perään .dat-tiedostoon.
+        NetBSD fortune 1.4:ssä tämä piti vaihtaa kahdeksi  erilliseksi  tiedos‐
+        toksi:  .dat  -tiedosto  sisälsi vain otsikkotiedot (osoitintaulukon ja
+        liput, katso strfile.h), ja itse teksti jätettiin  omaan  tiedostoonsa.
+        Mahdollinen  ongelma  oli, että tekstitiedosto ja otsikkotiedosto eivät
+        olisi ajan tasalla,  mutta  hyötynä  taas  tekstitiedostoja  pystyttiin
+        muokkaamaan   ilman  jatkuvaa  unstr-tietokannan  uudelleenjärjestelyä.
+        Myös   pieniä   levytilan   säästöjä   esiintyi   (edellyttäen,    että
+        järjestelmänvalvojat säilyttivät ennen kummatkin tiedostot).
+ 
+        Monet      NetBSD-versioon      tehdyistä     muutoksista     olettivat
+        käyttöjärjestelmän   olevan    Linux,    eivätkä    toimineet    muissa
+        järjestelmissä,  kuten  BSD:ssä.  Lähdekoodia on sen jälkeen yleistetty
+        ja nykyään ohjelma toimii Linuxin ohella  myös  SunOS  4.x:ssä.   Tule‐
+        vaisuudessa  yhä  useampi  järjestelmä  tulee  tuetuksi.   Huomaa, että
+        joitakin bugeja löydettiin vahingossa  ja  korjattiin  tämän  prosessin
+        aikana.
+ 
+        Arvatenkin  moni ihminen on työstänyt tätä ohjelmaa, mutta he eivät ole
+        jättäneet nimiään historiaan.</value>
+  </data>
+</root>
